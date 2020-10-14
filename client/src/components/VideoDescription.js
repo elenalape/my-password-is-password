@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoDescription = ({ description }) => {
 	return (
-		<div>
+		<div style={{ textAlign: "center" }}>
 			<p>{description}</p>
 		</div>
 	);

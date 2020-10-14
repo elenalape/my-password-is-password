@@ -1,3 +1,5 @@
-.bg-blue {
-	background-color: blue;
+.security-image {
+	background-image: url(./security-dark-blue.png);
+	height: 50px;
+	width: auto;
 }

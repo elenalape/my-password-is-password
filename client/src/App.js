@@ -32,7 +32,8 @@ const App = () => {
 				className="ui"
 				style={{ padding: "50px", textAlign: "center" }}
 			>
-				<h1>Computing in the Classroom</h1>
+				<h1>My Password is ********</h1>
+				<h3>Personal data privacy crash course</h3>
 			</div>
 			<div>
 				<Navbar lessons={lessons} />
