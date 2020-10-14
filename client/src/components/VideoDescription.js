@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoDescription = ({ description }) => {
 	return (
-		<div style={{ textAlign: "center" }}>
+		<div style={{ paddingTop: "10px" }}>
 			<p>{description}</p>
 		</div>
 	);

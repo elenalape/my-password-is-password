@@ -5,19 +5,51 @@ import security from "../assets/security-dark-blue.png";
 
 const VideoPlayer = ({ selectedLesson }) => {
 	if (selectedLesson) {
+		// 560 by 315
 		return (
-			<div className="ui grid" style={{ paddingTop: "40px" }}>
-				<div className="eight wide column">
-					<iframe
-						height="315"
-						width="560"
-						src={selectedLesson.video}
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
+			<div className="ui grid">
+				<div className="sixteen wide column">
+					<div style={{ display: "flex", justifyContent: "center" }}>
+						<div
+							style={{
+								width: "100%",
+								maxWidth: "550px",
+							}}
+						>
+							<h2
+								style={{
+									textAlign: "center",
+									padding: "20px",
+								}}
+							>
+								{selectedLesson.title}
+							</h2>
+							<div
+								style={{
+									position: "relative",
+									overflow: "hidden",
+									paddingTop: "56.25%",
+								}}
+							>
+								<iframe
+									style={{
+										position: "absolute",
+										top: "0",
+										left: "0",
+										width: "100%",
+										height: "100%",
+										border: "0",
+									}}
+									src={selectedLesson.videoUrl}
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div className="two wide column">
+				<div className="ten wide column">
 					<VideoDescription
 						description={selectedLesson.description}
 					/>
