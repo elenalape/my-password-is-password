@@ -14,19 +14,19 @@ const Navbar = ({ lessons }) => {
 					className="item"
 					onClick={() => setSelectedLesson(lessons[0])}
 				>
-					Lesson 1
+					T&Cs and Privacy Policy?
 				</a>
 				<a
 					className="item"
 					onClick={() => setSelectedLesson(lessons[1])}
 				>
-					Lesson 2
+					Choosing a Password
 				</a>
 				<a
 					className="item"
 					onClick={() => setSelectedLesson(lessons[2])}
 				>
-					Lesson 3
+					Let's go Phishing
 				</a>
 			</div>
 			<div>

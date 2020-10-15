@@ -39,8 +39,9 @@ const App = () => {
 					textAlign: "center",
 				}}
 			>
-				<h1>My Password is ********</h1>
-				<h3>Personal data privacy crash course</h3>
+				<h1>My Password is ********!</h1>
+				<hr />
+				<h3>A crash course on privacy</h3>
 			</div>
 			<div>
 				<Navbar lessons={lessons} />

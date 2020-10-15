@@ -16,14 +16,14 @@ const VideoPlayer = ({ selectedLesson }) => {
 								maxWidth: "550px",
 							}}
 						>
-							<h2
+							<h3
 								style={{
 									textAlign: "center",
 									padding: "20px",
 								}}
 							>
 								{selectedLesson.title}
-							</h2>
+							</h3>
 							<div
 								style={{
 									position: "relative",
@@ -59,16 +59,36 @@ const VideoPlayer = ({ selectedLesson }) => {
 	}
 
 	return (
-		<div style={{ paddingTop: "40px" }}>
-			<div style={{ textAlign: "center" }}>
-				<p>
-					This is a Computing in the Classroom course. This is a
-					Computing in the Classroom course. This is a Computing in
-					the Classroom course. This is a Computing in the Classroom
-					course. This is a Computing in the Classroom course. This is
-					a Computing in the Classroom course.
-				</p>
-				<p>This is a Computing in the Classroom course.</p>
+		<div style={{ paddingBottom: "20px" }}>
+			<div style={{ paddingTop: "10px" }}>
+				<div
+					style={{
+						contentAlign: "center",
+						paddingLeft: "20px",
+						paddingRight: "20px",
+					}}
+				>
+					<h5>
+						A lot of the things that we do on the computer and on
+						the phone are quite secure. Random people can’t easily
+						steal your passwords, or take over your device — which
+						used to be way more doable in the past!
+					</h5>
+					<h5>
+						But with so many websites, and apps and screens and all
+						the <span style={{ color: "green" }}>Agree</span>{" "}
+						buttons, we may accidentally be giving away our whole
+						life to people we don’t know. And not only when we set
+						our password to something extremely easy to guess, like
+						"password".
+					</h5>
+					<h5>
+						This video crash course is designed to provide you with
+						just the right tools and experience to protect your
+						personal data online. Select a topic above and start
+						learning!
+					</h5>
+				</div>
 			</div>
 			<div
 				style={{
@@ -87,6 +107,19 @@ const VideoPlayer = ({ selectedLesson }) => {
 					alt="Logo"
 				/>
 			</div>
+			<p>
+				This project developed as part of coursework for the
+				<a href={"http://www.drps.ed.ac.uk/19-20/dpt/cxinfr10077.htm"}>
+					{" "}
+					Computing in the Classroom module
+				</a>{" "}
+				at the University of Edinburgh, and the source code for this
+				site is available{" "}
+				<a href={"https://github.com/elenalape/Privacy-Crash-Course"}>
+					here
+				</a>
+				.
+			</p>
 		</div>
 	);
 };
