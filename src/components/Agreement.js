@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-			integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
-			crossorigin="anonymous"
-		/>
-	</head>
-	<body style="background-image: url(/hypnotize.png);">
+import React from "react";
+
+const Agreement = () => {
+	return (
 		<div class="ui container">
 			<br />
 			<h1>Privacy Policy</h1>
+			<hr />
 			<h3>
 				This privacy policy will explain how MyPasswordIsPassword uses
 				the personal data we collect from you when you use our website.
@@ -86,20 +80,25 @@
 
 			<p>
 				If you no longer wish to be contacted for marketing purposes,
-				please email
-				<a href="mailto:nobodyreadsthisinbox@mypasswordispassword.club"
-					>nobodyreadsthisinbox@mypasswordispassword.club</a
-				>.
+				please email{" "}
+				<a href="mailto:nobodyreadsthisinbox@mypasswordispassword.club">
+					nobodyreadsthisinbox@mypasswordispassword.club
+				</a>
+				.
 			</p>
 			<br />
-			<h5 style="color: red;">
+			<h5 style={{ color: "red" }}>
 				This Privacy Policy is a mockup that was created for educational
 				purposes loosely following the GDPR
-				<a href="https://gdpr.eu/privacy-notice/"
-					>Privacy Notice template</a
-				>.
+				<a href="https://gdpr.eu/privacy-notice/">
+					{" "}
+					Privacy Notice template
+				</a>
+				.
 			</h5>
 			<br />
 		</div>
-	</body>
-</html>
+	);
+};
+
+export default Agreement;
