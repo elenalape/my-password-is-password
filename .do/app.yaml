@@ -1,9 +1,0 @@
-name: privacy-crash-course
-services:
-- build_command: yarn build
-  environment_slug: node-js
-  github:
-    branch: digitalocean
-    deploy_on_push: true
-    repo: elenalape/Privacy-Crash-Course
-  name: privacy-crash-course
