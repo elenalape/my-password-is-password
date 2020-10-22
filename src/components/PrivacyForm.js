@@ -46,7 +46,7 @@ const PrivacyForm = () => {
 					<input type="submit" value="Submit" />
 				</form>
 				<h4>
-					<a href="/">Return to homepage</a>
+					<a href="/">Homepage</a>
 				</h4>
 			</div>
 		</div>

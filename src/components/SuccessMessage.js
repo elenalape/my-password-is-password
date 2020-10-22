@@ -6,9 +6,7 @@ const SuccessMessage = () => {
 			<br />
 			<h2>Thanks for submitting the form!</h2>
 			<br />
-			<h3>
-				<a href="/">Return to homepage</a>
-			</h3>
+			<h3>You may safely close this tab.</h3>
 		</div>
 	);
 };

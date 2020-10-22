@@ -5,7 +5,6 @@ import security from "../assets/security-dark-blue.png";
 
 const VideoPlayer = ({ selectedLesson }) => {
 	if (selectedLesson) {
-		// 560 by 315
 		return (
 			<div className="ui grid">
 				<div className="sixteen wide column">
@@ -49,10 +48,8 @@ const VideoPlayer = ({ selectedLesson }) => {
 						</div>
 					</div>
 				</div>
-				<div className="ten wide column">
-					<VideoDescription
-						description={selectedLesson.description}
-					/>
+				<div className="sixteen wide column">
+					<VideoDescription lessonData={selectedLesson.lessonData} />
 				</div>
 			</div>
 		);
