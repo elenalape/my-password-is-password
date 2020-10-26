@@ -6,9 +6,11 @@ const PrivacyForm = () => {
 
 	const handleSubmit = (e) => {
 		if (!checked) {
+			// if the user hasn't checked the box, show them a pop-up
 			e.preventDefault();
 			alert("Make sure you've agreed with the Privacy Policy!");
 		} else {
+			// pretend to submit the form
 			return true;
 		}
 	};

@@ -3,196 +3,171 @@ import React from "react";
 const Lesson2 = () => {
 	return (
 		<div>
+			<h3>
+				<a href="/form">Click here to register for the course</a>
+			</h3>
 			<h4>Summary</h4>
 			<ul>
 				<li>
-					Passwords are used to uniquely identify you ("authenticate")
-					who you are and that you are a legitimate, registered user
-					on the site/app.
+					Terms & Conditions define the relationship between the
+					service provider (app, website) and the user (you). This
+					includes things like what features the service provides, and
+					how it handles misuse. It is a legal agreement.
 				</li>
 				<li>
-					A service provider has a database with each username or
-					email address mapped to a password.
+					Privacy Policy defines how the company who created the
+					service handles user data.
 				</li>
 				<li>
-					To protect themselves against hackers getting access to
-					passwords in case of a data leak, companies store hashes of
-					passwords instead of plain-text.
+					There is a lot more data about you on the internet than you
+					think. It is not limited to usernames and photos; sites
+					often track which links you click, what your friends say
+					about you etc.
 				</li>
 				<li>
-					A hash is a one-way black box: you give it a word, and it
-					gives you back a copletely different word. The idea of
-					"one-way" is that you cannot reverse the result back to the
-					original input.
-				</li>
-				<li>Popular hashes have been cracked and decoded.</li>
-				<li>
-					"Salts" can be used to make passwords more secure. More
-					information about salts{" "}
-					<a href="https://www.troyhunt.com/we-didnt-encrypt-your-password-we-hashed-it-heres-what-that-means/">
-						here
-					</a>
-					.
+					Privacy Policy is ambigious, although typically informs you
+					whether your data is shared with third parties.
 				</li>
 				<li>
-					A good password will be long, unique, include special
-					characters. You should try to use a different password for
-					each site, which can be easily done with a password manager
-					app (1Password, LastPass). Use two-factor authentication
-					where possible.
+					Protecting your privacy is important because there is so
+					much of it, and it can be either "sold" to advertisers, or
+					make you easily identifiable.
 				</li>
 			</ul>
 			<h4>
 				<a href="/">
-					Coming soon: Test your knowledge — complete the Lesson 2
+					Coming soon: Test your knowledge — complete the Lesson 1
 					quiz!
 				</a>
 			</h4>
 			<h4>Transcript</h4>
 			<p>
-				A couple of months back I received an email from an unknown
-				sender saying they have some compromising videos and photos of
-				me they recorded using my webcam. The email stated that they
-				will share that content with my friends and family unless I pay
-				$2000 into a bitcoin wallet they provided.
+				Before we begin the video, please sign up using the link below.
+				It is extremely important that you do so right at this moment,
+				so pause the video, go visit the link, and come back to this
+				video. Pause it and come back.
 			</p>
 			<p>
-				What freaked me out the most though is that the sender
-				referenced one of my old passwords to prove that they really
-				have my information. Now that’s quite scary — because even if
-				they lied about possessing videos or photos they were talking
-				about, they may still be able to use that password to access my
-				email, bank account or social profiles.
+				Ok, I’m going to assume you’re back! If you didn’t sign up using
+				the form, good for you. If you did indeed input your email
+				address there — chances are, you’ve agreed with the Privacy
+				Policy but haven’t actually read it.
 			</p>
 			<p>
-				We’ll split this video into three parts: first let’s talk about
-				how passwords are stored, and then we’ll examine how and why
-				they may be hacked. Finally, we’ll look at some of the best
-				practices of choosing a secure password.
-			</p>
-			<h5>How Passwords Are Stored</h5>
-			<p>
-				When you choose a password for your banking app, social media
-				app or a grocery delivery website, it is sent somewhere. The
-				website owner’s job is to store both your username and/or email
-				address and your password, so that when you enter the two, they
-				can know that it’s really you.
+				If you’ve read the rules, you would have spotted that you’ve
+				just granted the right for me to share your email address to the
+				most annoying newsletters in the world. Your tick counts as a
+				signature on a legally binding document.
 			</p>
 			<p>
-				Now, if a website owner kept your username and your password
-				just as they are, so-called “plain-text”, that would be quite
-				dangerous. If someone accidentally gets access to the user
-				database, they could immediately see all usernames and passwords
-				associated with each other and use them to do bad things. Or
-				sell them. Or paste them online for everyone to see on a random
-				site, which is probably how the hacker from my email got mine.
+				Now, I won’t share your email address with anyone, the webpage
+				is just a mockup and there is no way for me to know what email
+				address you’ve entered. But let’s examine closer what Privacy
+				Policy and Terms and Conditions are.
 			</p>
 			<p>
-				This is why passwords aren’t usually just stored as words, and
-				instead, their “hashes” are stored. Not hashbrowns. Hashes.
+				Typically, you’ll see two types of documents when you sign up to
+				a new service or an app.
 			</p>
 			<p>
-				A hash, in formal terms, is a one-way function. In informal
-				terms, it’s kind of like a black box to which you give a word,
-				and it spits out another word. Unlike encryption algorithms,
-				hashes can only do it one-way, meaning that the word the
-				blackbox produces cannot be reversed back into its original
-				form.
+				One of them is Terms and Conditions, or Terms of Service, T&Cs,
+				or any other terms. This document provides an outline of what
+				the app or the website is, what it does, what features it has.
+				Terms of Use define what the relationship is between you as a
+				user, and the Company who has built the website.
 			</p>
 			<p>
-				What this means, is that somewhere between you entering a
-				password and that password being sent to a database, it is
-				“hashed”, so the password it receives is not your real password.
-				That’s what is stored in the database, and when you log in, the
-				same hash is checked.
+				Companies need to have Terms and Conditions in order to protect
+				themselves against abusers in court, for example. So that if
+				someone uses their service for something it’s not intended to,
+				the company can say, hey, what this user did is against our
+				rules.
 			</p>
 			<p>
-				A popular hashing algorithm is called MD5. For example, password{" "}
-				<i>hunter2</i> would be turned into{" "}
-				<i>db941ff0a535664048abe7b44dfbe870</i> by MD5. Makes sense?
-			</p>
-			<h5>How Passwords Are Hacked</h5>
-			<p>
-				Hashing passwords sounds like a really great solution against
-				hackers, because even if someone does get access to a website’s
-				user database, all they will see is a bunch of email addresses
-				and clusters of letters and numbers. They wouldn’t be able to
-				use those to log into a website (because the website would just
-				again hash whatever input it gets, so a completely different
-				piece of text would be sent and it wouldn’t match the original
-				hash).
+				Then, there is another document — Privacy Policy. That’s the one
+				where it gets really interesting.
 			</p>
 			<p>
-				Unfortunately, there are at least two issues with this. One, not
-				all websites hash their passwords, especially older ones. Two,
-				hashes are occasionally cracked and decoded.
+				Privacy Policy is all about how that company manages data — what
+				they collect about you, what they store, how data is kept safe,
+				and how it’s used to sell you stuff. This includes your personal
+				data. Name, password, email — whatever you entered to sign up.
+				But wait. There’s more.
 			</p>
 			<p>
-				This can be done through brute force, for example, where someone
-				gets hold of, say, 15,000,000 passwords and uses a powerful
-				computer with a lot of processing power to make up hashes for
-				each password. So now they have mappings of 15,000,000 passwords
-				to their hashes.
+				Reading through Instagram's Privacy Policy, you can probably
+				already name a bunch of reasons why this is problematic.
 			</p>
 			<p>
-				There are additional techniques, like “salting” hashes, to make
-				passwords more secure — add an additional word to each password
-				in an attempt to make the resulting hashes more unique. Hunter2,
-				Password and 12345 are common passwords and a hacker will
-				immediately recognise them if they see their hash equivalents in
-				a database. But if we instead hash hunter2hello, passwordhello,
-				12345hello, if a hacker sees their hashes in the database, they
-				probably won’t be able to decode it so easily. The salts are
-				handled by programmers.
+				For one, when you signed up for Instagram, TikTok, the course
+				registration form, you probably didn’t read what data the
+				company is collecting. Sure, maybe you would have bitten the
+				bullet and accepted the policy, but at least you would feel like
+				you know what you’re signing up for, right?
 			</p>
 			<p>
-				Read more about it in{" "}
-				<a href="https://www.troyhunt.com/we-didnt-encrypt-your-password-we-hashed-it-heres-what-that-means/">
-					this brilliant article by Troy Hunt
-				</a>
-				.
-			</p>
-			<h5>How to Choose a Password</h5>
-			<p>
-				It may seem like nothing is secure, and passwords are totally
-				worthless if everything can be hacked anyway.
+				Two — there is a lot more data about you than you think. When
+				you’re signing up for something, you think you are only giving
+				them exactly what’s asked of you — name, email address etc. but
+				that’s just the tip of the iceberg, as we’ve just seen with
+				Instagram. Location data, what sites you visit, whose profile
+				you’re checking, even what your friends say about you, that may
+				all be recorded.
 			</p>
 			<p>
-				The key to choosing a good password is to choose something
-				that’s long, unique, and can’t be easily guessed by someone who
-				knows you. Data leaks are common, but the chances of your
-				password being guessed by a nosy friend or a lover are way
-				higher.
+				Something that online shops do to increase their sales for
+				example, is track where the user is placing their cursor when
+				they’re browsing the store and create deals and discounts
+				specifically for that user based on that.
 			</p>
 			<p>
-				In fact, one of the reasons why websites ask you to use special
-				characters, is specifically for that reason. To a black box
-				hash, it doesn’t make that much of a difference, whether it
-				receives an <i>a</i> or an exclamation mark, unless the mappings
-				are leaked of course, but your “frenemy” may know your favourite
-				high school teacher’s name, but not know that you substituted
-				the <i>i</i> with a <i>!</i>.
+				And then lastly, we rarely know how the information you are
+				sharing is used, and who it’s shared with. You may think, okay,
+				sure I’m giving away a lot, but if it’s just Instagram who knows
+				who I am, then it’s not so bad? Well, it’s not quite what
+				happens. Oftentimes, all this additional data, called meta-data,
+				will be shared with advertisers who want people just like you to
+				buy things from them, or influence your opinion. Meta-data can
+				include things like what time of the day you look at the app,
+				which posts you stop for a few seconds to look at, what types of
+				accounts you search for, or how often you check who watches your
+				stories.
+			</p>
+			<p>Privacy Policy statements are also vague.</p>
+			<p>
+				Instagram's Privacy Statement says:{" "}
+				<i>
+					“We don't sell any of your information to anyone, and we
+					never will.”
+				</i>
+				But then in the next page —{" "}
+				<i>
+					“We provide advertisers with reports about the kinds of
+					people seeing their ads and how their ads are performing,
+					but we don't share information that personally identifies
+					you (information such as your name or email address that by
+					itself can be used to contact you or identifies who you are)
+					unless you give us permission.”
+				</i>
 			</p>
 			<p>
-				It’s a good idea to have a different password for each site, in
-				case a data leak happens and the password you always use is
-				revealed alongside your email address. It can be quite hard to
-				keep track of dozens and potentially hundreds of passwords, as
-				well as regularly update them etc. Luckily, there’s software to
-				help us do that, as well as some browsers have built-in
-				capabilities for this. Also, if you can, use two-factor
-				authentication — the "two factors" are usually a password, and
-				confirming your identity through clicking an email link or
-				entering a code you receive via text message. It's an additional
-				layer of protection.
+				So location data, does that identify you? What if the advertiser
+				wants to target everyone living in your area, who is your age,
+				goes to a particular set of schools? Is that not, in a way, your
+				data? To be clear, the advertisers pay to have access to that
+				group of people, and Instagram collects money for providing that
+				data. Now, if person A is paying person B for something, that’s
+				a sale. So is Instagram not selling your data? And, are you
+				compensated for it fairly?
 			</p>
 			<p>
-				Lastly, I want to say that if you ever get an email like I did,
-				the first thing you should do is change your password on all
-				services that may be using it. It is very unlikely that the
-				sender has the information they’re talking about, it’s a known
-				scam scenario that’s been around for years. Regardless, covering
-				your webcam is not a bad idea. Even Zuckerberg does it.
+				Privacy Policy is a ridiculously boring read, and it’s
+				unrealistic to expect that people will read these documents each
+				time they sign up for a new site. But it is important that
+				companies be honest with people about what exactly they know
+				about them and how they are using that knowledge. And we should
+				expect our governments to regulate this. In the meantime it is
+				important for us, as users, to stay vigilant.
 			</p>
 		</div>
 	);

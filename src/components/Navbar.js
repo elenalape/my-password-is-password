@@ -8,16 +8,16 @@ const Navbar = () => {
 	// lessonData is a functional component, we'll instantiate it in VideoDescription
 	const lessons = [
 		{
-			id: 1,
-			title: "Lesson 1: Terms and Conditions & Privacy Policy",
+			id: 2,
+			title: "Lesson 2: Terms and Conditions & Privacy Policy",
 			videoUrl: "https://www.youtube.com/embed/lj4VncsqFQw",
-			lessonData: Lesson1,
+			lessonData: Lesson2,
 		},
 		{
-			id: 2,
-			title: "Lesson 2: How are passwords hacked?",
+			id: 1,
+			title: "Lesson 1: All About Passwords",
 			videoUrl: "https://www.youtube.com/embed/izqkeikxlV4",
-			lessonData: Lesson2,
+			lessonData: Lesson1,
 		},
 	];
 
@@ -43,15 +43,15 @@ const Navbar = () => {
 				</a>
 				<a
 					className="item"
-					onClick={() => setSelectedLesson(lessons[0])}
+					onClick={() => setSelectedLesson(lessons[1])}
 				>
-					What are T&Cs and Privacy Policy?
+					Hacking Passwords
 				</a>
 				<a
 					className="item"
-					onClick={() => setSelectedLesson(lessons[1])}
+					onClick={() => setSelectedLesson(lessons[0])}
 				>
-					How Passwords Are Hacked
+					What is Privacy Policy?
 				</a>
 			</div>
 			<div>
