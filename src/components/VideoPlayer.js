@@ -106,7 +106,7 @@ const VideoPlayer = ({ selectedLesson }) => {
 				/>
 			</div>
 			<p>
-				This project developed as part of coursework for the
+				This project is part of coursework for the
 				<a href={"http://www.drps.ed.ac.uk/19-20/dpt/cxinfr10077.htm"}>
 					{" "}
 					Computing in the Classroom module

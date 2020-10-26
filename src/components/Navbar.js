@@ -9,14 +9,14 @@ const Navbar = () => {
 	const lessons = [
 		{
 			id: 2,
-			title: "Lesson 2: Terms and Conditions & Privacy Policy",
-			videoUrl: "https://www.youtube.com/embed/lj4VncsqFQw",
+			title: "Terms and Conditions & Privacy Policy",
+			videoUrl: "https://www.youtube.com/embed/CSBRggn5NNc",
 			lessonData: Lesson2,
 		},
 		{
 			id: 1,
-			title: "Lesson 1: All About Passwords",
-			videoUrl: "https://www.youtube.com/embed/izqkeikxlV4",
+			title: "All About Passwords",
+			videoUrl: "https://www.youtube.com/embed/r9hdUuziP30",
 			lessonData: Lesson1,
 		},
 	];
