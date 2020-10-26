@@ -37,7 +37,7 @@ const Navbar = () => {
 				<hr />
 				<h3>A crash course on privacy</h3>
 			</div>
-			<div className="ui three item menu">
+			<div className="ui four item menu">
 				<a className="item" onClick={() => setSelectedLesson(null)}>
 					Overview
 				</a>
@@ -52,6 +52,11 @@ const Navbar = () => {
 					onClick={() => setSelectedLesson(lessons[0])}
 				>
 					What is Privacy Policy?
+				</a>
+				<a className="item" onClick={() => setSelectedLesson(null)}>
+					<span style={{ color: "grey", fontWeight: "bold" }}>
+						Coming soon: How I phished my brother
+					</span>
 				</a>
 			</div>
 			<div>
