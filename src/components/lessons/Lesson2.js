@@ -35,9 +35,9 @@ const Lesson2 = () => {
 				</li>
 			</ul>
 			<h4>
-				<a href="/">
-					Coming soon: Test your knowledge — complete the Lesson 1
-					quiz!
+				<a href="https://www.surveymonkey.co.uk/r/HZPMKVS">
+					Coming soon: Test your knowledge — complete the T&Cs and
+					Privacy Policy quiz!
 				</a>
 			</h4>
 			<h4>Transcript</h4>

@@ -47,9 +47,8 @@ const Lesson1 = () => {
 				</li>
 			</ul>
 			<h4>
-				<a href="/">
-					Coming soon: Test your knowledge — complete the Lesson 2
-					quiz!
+				<a href="https://www.surveymonkey.co.uk/r/PGW2RVD">
+					Test your knowledge — complete the Passwords quiz!
 				</a>
 			</h4>
 			<h4>Transcript</h4>
