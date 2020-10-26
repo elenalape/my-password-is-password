@@ -96,8 +96,8 @@ const VideoPlayer = ({ selectedLesson }) => {
 			>
 				<img
 					style={{
-						width: "100%",
 						maxWidth: "400px",
+						width: "100%",
 						heigh: "auto",
 					}}
 					src={security}
