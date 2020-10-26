@@ -22,7 +22,7 @@ const Agreement = () => {
 				<li>Name</li>
 				<li>Email address</li>
 			</ul>
-			<h4>How do we collect youe data?</h4>
+			<h4>How do we collect your data?</h4>
 			<p>
 				You directly provide MyPasswordIsPassword with most of the data
 				we collect. We collect data and process data when you:
