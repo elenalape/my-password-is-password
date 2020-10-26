@@ -89,6 +89,7 @@ const VideoPlayer = ({ selectedLesson }) => {
 			</div>
 			<div
 				style={{
+					alignItems: "flex-start",
 					display: "flex",
 					justifyContent: "center",
 					paddingTop: "10px",
