@@ -4,7 +4,9 @@ const Lesson2 = () => {
 	return (
 		<div>
 			<h3>
-				<a href="/form">Click here to register for the course</a>
+				<a href="/form" target="_blank">
+					Click here to register for the course
+				</a>
 			</h3>
 			<h4>Summary</h4>
 			<ul>
