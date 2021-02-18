@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import VideoPlayer from "./VideoPlayer";
 import Lesson1 from "./lessons/Lesson1.js";
 import Lesson2 from "./lessons/Lesson2.js";
+import Lesson3 from "./lessons/Lesson3.js";
 
 const Navbar = () => {
 	// todo: move the following const out of Navbar
 	// lessonData is a functional component, we'll instantiate it in VideoDescription
 	const lessons = [
+		{
+			id: 3,
+			title: "Spot Phishing",
+			videoUrl: "https://www.youtube.com/embed/7ieCcOATNEE",
+			lessonData: Lesson3,
+		},
 		{
 			id: 2,
 			title: "Terms and Conditions & Privacy Policy",
@@ -53,10 +60,11 @@ const Navbar = () => {
 				>
 					What is Privacy Policy?
 				</a>
-				<a className="item" onClick={() => setSelectedLesson(null)}>
-					<span style={{ color: "grey", fontWeight: "bold" }}>
-						Coming soon: How I phished my brother
-					</span>
+				<a
+					className="item"
+					onClick={() => setSelectedLesson(lessons[2])}
+				>
+					Phishing
 				</a>
 			</div>
 			<div>
