@@ -14,9 +14,9 @@ The topic explores how the passwords are stored in a database (spoiler: they're 
 
 Very few people on the planet read the contents of the two whenever they sign up for a new website. The topic gives a summary of what each document and analyses Instagram's Data Policy as a case study.
 
-### How I Phished My Brother (Coming soon)
+### Creative Phishing
 
-I wrote a script to send out emails from whatever address I want. Due to security concerns, we can't look at the script, but we'll look at some creative phishing emails and scams.
+I wrote a script to send out emails from whatever address I want and used this beauty to trick my friend. Due to security concerns, we can't look at the script, but we examine how to spot phishing emails.
 
 ---
 
